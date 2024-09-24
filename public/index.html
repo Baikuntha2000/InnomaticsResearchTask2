@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border:1px solid black;
+            width:580px;
+            height:300px;
+            border-collapse: collapse;
+        }
+        .home{
+            background-color:rgb(227, 155, 155);
+            padding:40px;
+        }
+        thead{
+            background-color: yellow;
+            
+        }
+        .frow{
+            background-color: yellow;
+            font-weight: bold;
+        }
+       
+        td{
+            width:10px;
+            border:1px solid black;
+            text-align: center;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        th{
+            padding:8px;
+            border: 1px solid black;
+            
+        }
+        tr{
+            border:1px solid black;
+        }
+        .col{
+            background-color: rgb(215, 209, 209);
+        }
+        .row4{
+            padding:15px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead >
+                <th colspan="6">Final Examination Schedule-Fall 2008</th>
+            </thead>
+            <tbody>
+                <tr class="frow" >
+                    <td></td>
+                    <th>Monday Dec.15</th>
+                    <th>Tuesday Dec.16</th>
+                    <th>Wednesday Dec.17</th>
+                    <th>Thursday Dec.18</th>
+                    <td rowspan="5" class="home">Home</td>
+                </tr>
+                <tr>
+                    <td class="col">8:00 a.m.</td>
+                    <td>Data Structure</td>
+                    <td> Algorithms</td>
+                    <td>Computer Networks</td>
+                    <td> Database Systems</td>
+                </tr>
+                <tr>
+                    <td class="col"> 10:00 a.m.</td>
+                    <td> Operating Systems</td>
+                    <td>Artificial Intelligence</td>
+                    <td> Software Engineering</td>
+                    <td> Web Development</td>
+                </tr>
+                <tr class="row4">
+                    <td class="col">1:00 p.m.</td>
+                    <td>Machine Learning</td>
+                    <td>Cycber Security</td>
+                    <td> Mobile Computing</td>
+                    <td> Human-Computer Interaction</td>
+                </tr>
+                <tr>
+                    <td class="col"> 3:00 p.m.</td>
+                    <td>Big Data Analytics</td>
+                    <td>Cloud Computing</td>
+                    <td>Parallel Computing</td>
+                    <td>Computer Graphics</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
