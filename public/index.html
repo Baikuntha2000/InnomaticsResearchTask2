@@ -5,99 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
-            border:1px solid black;
-            width:580px;
-            height:300px;
-            border-collapse: collapse;
+        .container{
+            margin:auto;
+            text-align: center;
+            width:900px;
+            background-color: white;
+            box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+            padding:10px;
+            border-radius: 15px;
+           
         }
-        .home{
-            background-color:rgb(227, 155, 155);
-            padding:40px;
-        }
-        thead{
-            background-color: yellow;
-            
-        }
-        .frow{
-            background-color: yellow;
+        .container label{
+            display: block;
+            text-align: left;
             font-weight: bold;
+            margin-bottom: 4px;
+        }
+        li{
+            text-align: left;
+            color:black;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            
         }
        
-        td{
-            width:10px;
-            border:1px solid black;
-            text-align: center;
+       
+        .container input,select{
+            width:100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 8px;
         }
-        div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height:100vh;
+        .container button{
+            width:100%;
+            padding: 8px;
+            box-sizing: border-box;
+            background-color:#007bff;
+            color:#fff;
+            border:none;
+            border-radius: 5px;
         }
-        th{
-            padding:8px;
-            border: 1px solid black;
+        h2{
+           all:unset;
+           font-size:18px;
+           font-weight: bold;
+           font-family:Arial;
+        }
+         
+        .sec1{
+            /* box-shadow:0px 5px 3px rgba(0, 0, 0, 0.2); */
+            background-color: rgb(232, 251, 249);
+            padding:18px;
+            border:1px solid rgb(231, 228, 228);
+            border-radius: 10px;
+        }
+
+        .sec2{
+        margin-top:40px;
+        /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+        background-color:rgb(243, 249, 249);
+        padding:30px;
+       
+        border:1px solid rgb(231, 228, 228);
+        border-radius: 10px;
+      }
+       a{
+        text-decoration: none;
+        color:#007bff;
+        margin-left:8px;
+       
+    
+       }
+      
+       .sec3{
+          margin-top: 40px;
+          /* box-shadow:0px 5px 3px rgba(10, 18, 18, 0.3); */
+          padding:30px;
+          border:1px solid rgb(231, 228, 228);
+          border-radius: 10px;
+       }
+       .sec4{
+        margin-top:100px;
+       }
+      button:hover{
+       background-color: rgb(70, 193, 235);
+      }
+      
+      table{
+        width:100%;
+        border-collapse: collapse;
+        margin-top:20px;
+        text-align: left;
+       
+      }
+      table tbody tr {
+            border-bottom: 1px solid #ddd; 
+        }
+      table td{
+        padding:20px
+      }
+      table th{
+        background-color: #007bff;
+        padding:6px;
+        text-align: center;
+        color:#fff;
+        text-align: left;
+        font-size: 16px;
+      }
+      iframe{
+            width: 100%; 
+            border: none;
+            margin-top:20px;
             
         }
-        tr{
-            border:1px solid black;
-        }
-        .col{
-            background-color: rgb(215, 209, 209);
-        }
-        .row4{
-            padding:15px;
-        }
-    
-
+     
+     
     </style>
 </head>
 <body>
-    <div>
-        <table>
-            <thead >
-                <th colspan="6">Final Examination Schedule-Fall 2008</th>
-            </thead>
-            <tbody>
-                <tr class="frow" >
-                    <td></td>
-                    <th>Monday Dec.15</th>
-                    <th>Tuesday Dec.16</th>
-                    <th>Wednesday Dec.17</th>
-                    <th>Thursday Dec.18</th>
-                    <td rowspan="5" class="home">Home</td>
-                </tr>
-                <tr>
-                    <td class="col">8:00 a.m.</td>
-                    <td>Data Structure</td>
-                    <td> Algorithms</td>
-                    <td>Computer Networks</td>
-                    <td> Database Systems</td>
-                </tr>
-                <tr>
-                    <td class="col"> 10:00 a.m.</td>
-                    <td> Operating Systems</td>
-                    <td>Artificial Intelligence</td>
-                    <td> Software Engineering</td>
-                    <td> Web Development</td>
-                </tr>
-                <tr class="row4">
-                    <td class="col">1:00 p.m.</td>
-                    <td>Machine Learning</td>
-                    <td>Cycber Security</td>
-                    <td> Mobile Computing</td>
-                    <td> Human-Computer Interaction</td>
-                </tr>
-                <tr>
-                    <td class="col"> 3:00 p.m.</td>
-                    <td>Big Data Analytics</td>
-                    <td>Cloud Computing</td>
-                    <td>Parallel Computing</td>
-                    <td>Computer Graphics</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container">
+        <form>
+            <h1>Company Details</h1>
+           <div class="sec1">
+                <h2>Employee Registration</h2>
+                <div>
+                   <label>Full Name:</label>
+                   <input type="text" required>
+                </div>
+                <div>
+                   <label>Email:</label>
+                   <input type="email" required>
+                </div>
+                <div>
+                   <label>Department:</label>
+                   <select>
+                    <option>IT</option>
+                    <option>Computer Science</option>
+                    <option>Electrical</option>
+                    <option>Mechanical</option>
+                    <option>Management</option>
+                   </select>
+                </div>
+                <div>
+                   <label>Employee ID:</label>
+                   <input type="number">
+                </div>
+                <div>
+                   <label>Profile Picture URL:</label>
+                   <input type="url" >
+                </div>
+                <div>
+                   <button>Register Employee</button>  
+                </div>
+           </div>
+           <div class="sec2">
+              <h2>Employee List</h2>
+              <ol type="1">
+                <li><a href="#">John Doe- john@example.com</a></li>
+                <li><a href="#">Jane Smith- jane@example.com</a></li>
+              </ol>
+           </div>
+           <div class="sec3">
+            <h2>Employe Details</h2>
+            <table>
+                <thead>
+                   <th>Name</th>
+                   <th>Employee ID</th>
+                   <th>Department</th>
+                   <th>Profile Picture</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>12345</td>
+                        <td>IT</td>
+                        <td></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>67890</td>
+                        <td>HR</td>
+                        <td></td>
+                    </tr>     
+                </tbody>
+            </table>
+           </div>
+           <div class="sec4">
+           <h2>Company Details</h2>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098387!2d144.95373631531494!3d-37.816279379751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1b4a2c9%3A0x5045675218ce7e33!2s123%20Main%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1632304542461!5m2!1sen!2sus&maptype=satellite"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" >
+
+            </iframe>
+           </div>
+        </form>
     </div>
 </body>
 </html>
